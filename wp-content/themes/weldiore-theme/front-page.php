@@ -31,7 +31,8 @@ get_header();
           <p><?php echo esc_html( $s[3] ); ?></p>
           <div class="hx-btns">
             <a class="btn-dark" href="<?php echo esc_url( home_url( '/products/' ) ); ?>">Explore Our Collection ↗</a>
-            <a class="btn-outline-light" href="<?php echo esc_url( home_url( '/request-a-quote/' ) ); ?>">Request a Quote →</a>
+            <a class="btn-outline-light" href="<?php echo esc_url( home_url( '/request-a-quote/' ) ); ?>">Request a
+              Quote →</a>
           </div>
         </div>
       </div>
@@ -143,7 +144,7 @@ get_header();
             <img src="<?php echo esc_url( $p[2] ); ?>" alt="<?php echo esc_attr( $p[0] ); ?>">
           </span>
           <span class="pop-meta">
-            <span>
+            <span>  
               <strong><?php echo esc_html( $p[0] ); ?></strong>
               <em><?php echo esc_html( $p[1] ); ?></em>
             </span>
