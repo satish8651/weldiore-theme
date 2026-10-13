@@ -162,7 +162,7 @@ $faqs = array(
 
     <?php
     $upload_dir = home_url( '/wp-content/uploads/2026/10/' );
-
+          
     // Balanced 6-Item Grid for Full Coverage
     $gallery_items = array(
       array(

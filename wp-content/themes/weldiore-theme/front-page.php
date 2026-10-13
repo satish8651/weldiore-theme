@@ -85,12 +85,12 @@ get_header();
 
       <?php
       $cats_home = array(
-        array( 'Leather & Fashion Bags', 'Timeless and trend-forward styles for brand collections.', 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Leather-laptop-bag_page-0040.jpg', 'leather-fashion-bags' ),
-        array( 'Laptop & Work Bags',     'Professional carry solutions for work and business.',        'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Leather-laptop-bag_page-0038.jpg', 'laptop-work-bags' ),
-        array( 'Tote Bags',              'Versatile silhouettes for retail and lifestyle labels.',     'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Leather-laptop-bag_page-0037.jpg', 'tote-bags' ),
-        array( 'Handbags',               'Structured and everyday handbag designs.',                   'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Leather-laptop-bag_page-0036.jpg', 'handbags' ),
-        array( 'Backpacks',              'Functional designs for travel, work and everyday use.',      'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Leather-laptop-bag_page-0035.jpg', 'backpacks' ),
-        array( 'Business Briefcases',    'Refined business bags for corporate and professional use.',  'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Leather-laptop-bag_page-0034.jpg', 'business-briefcases' ),
+        array( 'Leather & Fashion Bags', 'Timeless and trend-forward styles for brand collections.', 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/ChatGPT-Image-Oct-13-2026-06_01_58-PM.png', 'leather-fashion-bags' ),
+        array( 'Laptop & Work Bags',     'Professional carry solutions for work and business.',        'http://localhost/weldiore-theme/wp-content/uploads/2026/10/ChatGPT-Image-Oct-13-2026-06_09_51-PM.png', 'laptop-work-bags' ),
+        array( 'Tote Bags',              'Versatile silhouettes for retail and lifestyle labels.',     'http://localhost/weldiore-theme/wp-content/uploads/2026/10/ChatGPT-Image-Oct-13-2026-06_12_05-PM.png', 'tote-bags' ),
+        array( 'Handbags',               'Structured and everyday handbag designs.',                   'http://localhost/weldiore-theme/wp-content/uploads/2026/10/ChatGPT-Image-Oct-13-2026-06_14_29-PM.png', 'handbags' ),
+        array( 'Backpacks',              'Functional designs for travel, work and everyday use.',      'http://localhost/weldiore-theme/wp-content/uploads/2026/10/ChatGPT-Image-Oct-13-2026-06_16_44-PM.png', 'backpacks' ),
+        array( 'Business Briefcases',    'Refined business bags for corporate and professional use.',  'http://localhost/weldiore-theme/wp-content/uploads/2026/10/ChatGPT-Image-Oct-13-2026-06_19_04-PM.png', 'business-briefcases' ),
       );
       ?>
 
@@ -133,7 +133,7 @@ get_header();
         array( 'Structured Handbag',   'Leather Bags', 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Leather-laptop-bag_page-0032.jpg' ),
         array( 'Quilted Shoulder Bag', 'Fashion Bags', 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Leather-laptop-bag_page-0031.jpg' ),
         array( 'Hobo Shoulder Bag',    'Fashion Bags', 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Leather-laptop-bag_page-0030.jpg' ),
-      );
+      );  
       ?>
 
       <div class="pop-grid">
