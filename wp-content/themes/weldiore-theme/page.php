@@ -88,7 +88,7 @@
                         <h2>Insights coming soon.</h2>
                         <p>Helpful guides for product development, materials and bag manufacturing will appear here.</p>
                     </div><?php endif; ?></div><?php else: the_content();endif; ?>
-            </div>
+            </  div>
         </div>
     </div>
 </main><?php endwhile;get_footer(); ?>

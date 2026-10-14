@@ -31,17 +31,22 @@ $faqs = array(
       <div class="ab2-hero-text">
         <small>ABOUT WELDIORE</small>
         <h1>Bags built for brands that <em>care about craft.</em></h1>
-        <p>We design and manufacture leather and fashion bags for brands, retailers and corporates, with consistent quality, flexible MOQ and on-time delivery.</p>
+        <p>We design and manufacture leather and fashion bags for brands, retailers and corporates, with consistent
+          quality, flexible MOQ and on-time delivery.</p>
         <div class="ab2-btns">
-          <a class="ab2-btn" href="<?php echo esc_url( home_url( '/request-a-quote/' ) ); ?>">Request a Quote <i aria-hidden="true">↗</i></a>
+          <a class="ab2-btn" href="<?php echo esc_url( home_url( '/request-a-quote/' ) ); ?>">Request a Quote <i
+              aria-hidden="true">↗</i></a>
           <a class="ab2-link" href="<?php echo esc_url( home_url( '/products/' ) ); ?>">View collection →</a>
         </div>
         <ul class="ab2-chips">
-          <?php foreach ( $chips as $c ) : ?><li><i aria-hidden="true">✓</i><?php echo esc_html( $c ); ?></li><?php endforeach; ?>
+          <?php foreach ( $chips as $c ) : ?><li><i aria-hidden="true">✓</i><?php echo esc_html( $c ); ?></li>
+          <?php endforeach; ?>
         </ul>
       </div>
       <div class="ab2-hero-media">
-        <img src="<?php echo esc_url('http://localhost/weldiore-theme/wp-content/uploads/2026/10/Arno-Enterprises-Leather-Laptop-Bag-2-59.png' ); ?>" alt="Weldiore manufacturing">
+        <img
+          src="<?php echo esc_url('http://localhost/weldiore-theme/wp-content/uploads/2026/10/source_6acf116b8f68bd2b9cf3de26.jpg' ); ?>"
+          alt="Weldiore manufacturing">
         <div class="ab2-float"><strong>10+</strong><span>Years of craft</span></div>
       </div>
     </div>
@@ -51,7 +56,7 @@ $faqs = array(
   <section class="ab2-marq" aria-label="Who we work with">
     <div class="ab2-track">
       <?php for ( $i = 0; $i < 2; $i++ ) : foreach ( $buyers as $b ) : ?>
-        <span><?php echo esc_html( $b ); ?></span><em aria-hidden="true">◆</em>
+      <span><?php echo esc_html( $b ); ?></span><em aria-hidden="true">◆</em>
       <?php endforeach; endfor; ?>
     </div>
   </section>
@@ -60,15 +65,22 @@ $faqs = array(
   <section class="ab2-story">
     <div class="ab2-wrap ab2-story-grid">
       <div class="ab2-collage">
-        <img class="ab2-c1" src="<?php echo esc_url( 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Arno-Enterprises-Leather-Laptop-Bag-2-87.png' ); ?>" alt="Leather craftsmanship">
-        <img class="ab2-c2" src="<?php echo esc_url( 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Arno-Enterprises-Leather-Laptop-Bag-2-87.png' ); ?>" alt="Stitching detail">
+        <img class="ab2-c1"
+          src="<?php echo esc_url( 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Gemini_Generated_Image_syvgs5syvgs5syvg-fotor-202610141163.jpg' ); ?>"
+          alt="Leather craftsmanship">
+        <img class="ab2-c2"
+          src="<?php echo esc_url( 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Gemini_Generated_Image_syvgs5syvgs5syvg-fotor-202610141163.jpg' ); ?>"
+          alt="Stitching detail">
       </div>
       <div>
         <small>OUR STORY</small>
         <h2>A manufacturing partner <em>built around your brand.</em></h2>
-        <p><strong>Weldiore</strong> is a trusted manufacturer of leather and fashion bags, serving brands, distributors and retailers across India and global markets.</p>
-        <p>We specialise in consistent bulk production and on-time delivery, with <strong>custom branding, private label, OEM and ODM</strong> services so your product matches your identity from logo to finished bag.</p>
-        <blockquote>Our mission is simple: deliver high-quality, cost-effective bags that strengthen your brand.</blockquote>
+        <p><strong>Weldiore</strong> is a trusted manufacturer of leather and fashion bags, serving brands, distributors
+          and retailers across India and global markets.</p>
+        <p>We specialise in consistent bulk production and on-time delivery, with <strong>custom branding, private
+            label, OEM and ODM</strong> services so your product matches your identity from logo to finished bag.</p>
+        <blockquote>Our mission is simple: deliver high-quality, cost-effective bags that strengthen your brand.
+        </blockquote>
       </div>
     </div>
   </section>
@@ -77,10 +89,11 @@ $faqs = array(
   <section class="ab2-stats">
     <div class="ab2-wrap ab2-stats-grid">
       <?php foreach ( $stats as $s ) : ?>
-        <div>
-          <strong><span class="ab2-count" data-to="<?php echo (int) $s[0]; ?>">0</span><?php echo esc_html( $s[1] ); ?></strong>
-          <span><?php echo esc_html( $s[2] ); ?></span>
-        </div>
+      <div>
+        <strong><span class="ab2-count"
+            data-to="<?php echo (int) $s[0]; ?>">0</span><?php echo esc_html( $s[1] ); ?></strong>
+        <span><?php echo esc_html( $s[2] ); ?></span>
+      </div>
       <?php endforeach; ?>
     </div>
   </section>
@@ -93,11 +106,27 @@ $faqs = array(
         <h2>Everything you need, <em>under one roof.</em></h2>
       </div>
       <div class="ab2-bento">
-        <article class="b-lg b-dark"><h3>Custom design and private label</h3><p>From sketch to finished bag. Your logo, hardware, lining and packaging, made to spec.</p><a href="<?php echo esc_url( home_url( '/custom-manufacturing/' ) ); ?>">Explore custom manufacturing →</a></article>
-        <article><h3>Low MOQ</h3><p>Start small, scale when ready.</p></article>
-        <article><h3>Strict QC</h3><p>Inspection at every stage.</p></article>
-        <article><h3>Fast sampling</h3><p>Sample approval before bulk.</p></article>
-        <article class="b-wide"><h3>Premium materials</h3><p>Genuine leather, PU and fashion fabrics sourced from vetted suppliers.</p></article>
+        <article class="b-lg b-dark">
+          <h3>Custom design and private label</h3>
+          <p>From sketch to finished bag. Your logo, hardware, lining and packaging, made to spec.</p><a
+            href="<?php echo esc_url( home_url( '/custom-manufacturing/' ) ); ?>">Explore custom manufacturing →</a>
+        </article>
+        <article>
+          <h3>Low MOQ</h3>
+          <p>Start small, scale when ready.</p>
+        </article>
+        <article>
+          <h3>Strict QC</h3>
+          <p>Inspection at every stage.</p>
+        </article>
+        <article>
+          <h3>Fast sampling</h3>
+          <p>Sample approval before bulk.</p>
+        </article>
+        <article class="b-wide">
+          <h3>Premium materials</h3>
+          <p>Genuine leather, PU and fashion fabrics sourced from vetted suppliers.</p>
+        </article>
       </div>
     </div>
   </section>
@@ -111,7 +140,10 @@ $faqs = array(
       </div>
       <ol class="ab2-steps">
         <?php foreach ( $steps as $n => $s ) : ?>
-          <li><span><?php echo sprintf( '%02d', $n + 1 ); ?></span><h3><?php echo esc_html( $s[0] ); ?></h3><p><?php echo esc_html( $s[1] ); ?></p></li>
+        <li><span><?php echo sprintf( '%02d', $n + 1 ); ?></span>
+          <h3><?php echo esc_html( $s[0] ); ?></h3>
+          <p><?php echo esc_html( $s[1] ); ?></p>
+        </li>
         <?php endforeach; ?>
       </ol>
     </div>
@@ -126,7 +158,10 @@ $faqs = array(
       </div>
       <div class="ab2-acc">
         <?php foreach ( $faqs as $f ) : ?>
-          <details><summary><?php echo esc_html( $f[0] ); ?></summary><p><?php echo esc_html( $f[1] ); ?></p></details>
+        <details>
+          <summary><?php echo esc_html( $f[0] ); ?></summary>
+          <p><?php echo esc_html( $f[1] ); ?></p>
+        </details>
         <?php endforeach; ?>
       </div>
     </div>
@@ -141,8 +176,10 @@ $faqs = array(
         <p>Tell us about your product and quantity. We reply within 24 hours.</p>
       </div>
       <div class="ab2-btns">
-        <a class="ab2-btn ab2-btn-light" href="<?php echo esc_url( home_url( '/request-a-quote/' ) ); ?>">Request a Quote <i aria-hidden="true">↗</i></a>
-        <a class="ab2-btn ab2-btn-ghost" href="https://wa.me/918100611554" target="_blank" rel="noopener">WhatsApp Us</a>
+        <a class="ab2-btn ab2-btn-light" href="<?php echo esc_url( home_url( '/request-a-quote/' ) ); ?>">Request a
+          Quote <i aria-hidden="true">↗</i></a>
+        <a class="ab2-btn ab2-btn-ghost" href="https://wa.me/918651868361" target="_blank" rel="noopener">WhatsApp
+          Us</a>
       </div>
     </div>
   </section>
@@ -151,18 +188,18 @@ $faqs = array(
 
 
   <!-- Weldiore Premium Full-Bleed Gallery Showcase -->
-<section class="ab-gallery">
-  <div class="ab-gallery-wrap">
-    
-    <div class="ab-gallery-head">
-      <small>FACTORY SHOWROOM & CRAFT</small>
-      <h2>WELDIORE COLLECTIONS</h2>
-      <p>A glimpse inside our leather goods manufacturing unit, curated showrooms, and custom collection displays.</p>
-    </div>
+  <section class="ab-gallery">
+    <div class="ab-gallery-wrap">
 
-    <?php
+      <div class="ab-gallery-head">
+        <small>FACTORY SHOWROOM & CRAFT</small>
+        <h2>WELDIORE COLLECTIONS</h2>
+        <p>A glimpse inside our leather goods manufacturing unit, curated showrooms, and custom collection displays.</p>
+      </div>
+
+      <?php
     $upload_dir = home_url( '/wp-content/uploads/2026/10/' );
-          
+
     // Balanced 6-Item Grid for Full Coverage
     $gallery_items = array(
       array(
@@ -180,7 +217,7 @@ $faqs = array(
       array(
         'title'    => 'Custom Handbag Display',
         'category' => 'Private Label',
-        'img'      => 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Arno-Enterprises-Leather-Laptop-Bag-2-82.png',
+        'img'      => 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Gemini_Generated_Image_2y1t5i2y1t5i2y1t.jpeg',
         'class'    => ''
       ),
       array(
@@ -204,11 +241,12 @@ $faqs = array(
     );
     ?>
 
-    <div class="ab-gallery-grid">
-      <?php foreach ( $gallery_items as $item ) : ?>
+      <div class="ab-gallery-grid">
+        <?php foreach ( $gallery_items as $item ) : ?>
         <div class="ab-gallery-item <?php echo esc_attr( $item['class'] ); ?>">
           <a class="ab-gallery-link" href="<?php echo esc_url( home_url( '/products/' ) ); ?>">
-            <img class="ab-gallery-img" src="<?php echo esc_url( $item['img'] ); ?>" alt="<?php echo esc_attr( $item['title'] ); ?>" loading="lazy">
+            <img class="ab-gallery-img" src="<?php echo esc_url( $item['img'] ); ?>"
+              alt="<?php echo esc_attr( $item['title'] ); ?>" loading="lazy">
             <div class="ab-gallery-overlay">
               <span class="ab-gallery-tag"><?php echo esc_html( $item['category'] ); ?></span>
               <h3 class="ab-gallery-title"><?php echo esc_html( $item['title'] ); ?></h3>
@@ -216,79 +254,99 @@ $faqs = array(
             </div>
           </a>
         </div>
-      <?php endforeach; ?>
-    </div>
-
-  </div>
-</section>
-
-<!-- -------REGISTERED B2B EXPORTER & MANUFACTURER------------------------------------------------------------------------------------------- -->
-
-<!-- Weldiore B2B Corporate Info & Contact Section -->
-<section class="wx-corp-section">
-  <div class="wx-corp-container">
-    <div class="wx-corp-card">
-      
-      <!-- Top Decorative Badge -->
-      <div class="wx-corp-badge">
-        <span class="wx-badge-icon">✓</span>
-        <span>REGISTERED B2B EXPORTER & MANUFACTURER</span>
-      </div>
-
-      <!-- Main Heading & Legal Info -->
-      <h3 class="wx-corp-title">
-        <strong>Vadalo Ventures Pvt. Ltd.</strong> 
-        <small>(CIN: U46410WB2024PTC275166)</small>
-      </h3>
-
-      <p class="wx-corp-desc">
-        Registered under the Companies Act 2013. Operating state-of-the-art leather manufacturing facility for global brands.
-      </p>
-
-      <!-- Grid Info Details -->
-      <div class="wx-corp-grid">
-        <div class="wx-corp-info-item">
-          <span class="wx-info-label">FACTORY ADDRESS</span>
-          <address class="wx-info-val">
-            57/N M.D. Kalachand Road, Musalman Para,<br>
-            Agarpara, Kolkata – 700111, West Bengal, India
-          </address>
-        </div>
-
-        <div class="wx-corp-info-item">
-          <span class="wx-info-label">OFFICE TELEPHONE</span>
-          <a class="wx-info-val wx-link" href="tel:+913331997211">+91 33 3199 7211</a>
-        </div>
-      </div>
-
-      <!-- Call to Action Button -->
-      <div class="wx-corp-action">
-        <a class="wx-btn-export" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">
-          <span>CONTACT OUR EXPORT TEAM</span>
-          <i class="wx-arrow" aria-hidden="true">→</i>
-        </a>
+        <?php endforeach; ?>
       </div>
 
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- -------REGISTERED B2B EXPORTER & MANUFACTURER------------------------------------------------------------------------------------------- -->
+
+  <!-- Weldiore B2B Corporate Info & Contact Section -->
+  <section class="wx-corp-section">
+    <div class="wx-corp-container">
+      <div class="wx-corp-card">
+
+        <!-- Top Decorative Badge -->
+        <div class="wx-corp-badge">
+          <span class="wx-badge-icon">✓</span>
+          <span>REGISTERED B2B EXPORTER & MANUFACTURER</span>
+        </div>
+
+        <!-- Main Heading & Legal Info -->
+        <h3 class="wx-corp-title">
+          <strong>WELDIORE CRAFTED FOR A BETTER TOMORROW.</strong>
+          <small>(CIN: U46410WB2024PTC275166)</small>
+        </h3>
+
+        <p class="wx-corp-desc">
+          Registered under the Companies Act 2013. Operating state-of-the-art leather manufacturing facility for global
+          brands.
+        </p>
+
+        <!-- Grid Info Details -->
+        <div class="wx-corp-grid">
+          <div class="wx-corp-info-item">
+            <span class="wx-info-label">FACTORY ADDRESS</span>
+            <address class="wx-info-val">
+              57/N M.D. Kalachand Road, Musalman Para,<br>
+              Agarpara, Kolkata – 700111, West Bengal, India
+            </address>
+          </div>
+
+          <div class="wx-corp-info-item">
+            <span class="wx-info-label">OFFICE TELEPHONE</span>
+            <a class="wx-info-val wx-link" href="tel:+913331997211">+91 33 3199 7211</a>
+          </div>
+        </div>
+
+        <!-- Call to Action Button -->
+        <div class="wx-corp-action">
+          <a class="wx-btn-export" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">
+            <span>CONTACT OUR EXPORT TEAM</span>
+            <i class="wx-arrow" aria-hidden="true">→</i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 </main>
 
 <script>
-(function () {
-  var els = document.querySelectorAll('.ab2-count');
-  if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.textContent = e.dataset.to; }); return; }
-  var io = new IntersectionObserver(function (list) {
-    list.forEach(function (en) {
-      if (!en.isIntersecting) return;
-      var el = en.target, to = +el.dataset.to, n = 0, step = Math.max(1, Math.ceil(to / 60));
-      var t = setInterval(function () { n += step; if (n >= to) { n = to; clearInterval(t); } el.textContent = n; }, 20);
-      io.unobserve(el);
+  (function () {
+    var els = document.querySelectorAll('.ab2-count');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(function (e) {
+        e.textContent = e.dataset.to;
+      });
+      return;
+    }
+    var io = new IntersectionObserver(function (list) {
+      list.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var el = en.target,
+          to = +el.dataset.to,
+          n = 0,
+          step = Math.max(1, Math.ceil(to / 60));
+        var t = setInterval(function () {
+          n += step;
+          if (n >= to) {
+            n = to;
+            clearInterval(t);
+          }
+          el.textContent = n;
+        }, 20);
+        io.unobserve(el);
+      });
+    }, {
+      threshold: .4
     });
-  }, { threshold: .4 });
-  els.forEach(function (e) { io.observe(e); });
-})();
+    els.forEach(function (e) {
+      io.observe(e);
+    });
+  })();
 </script>
 
 <?php get_footer(); ?>

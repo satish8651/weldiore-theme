@@ -31,8 +31,7 @@ get_header();
           <p><?php echo esc_html( $s[3] ); ?></p>
           <div class="hx-btns">
             <a class="btn-dark" href="<?php echo esc_url( home_url( '/products/' ) ); ?>">Explore Our Collection ↗</a>
-            <a class="btn-outline-light" href="<?php echo esc_url( home_url( '/request-a-quote/' ) ); ?>">Request a
-              Quote →</a>
+            <a class="btn-outline-light" href="<?php echo esc_url( home_url( '/request-a-quote/' ) ); ?>">Request a Quote →</a>
           </div>
         </div>
       </div>
@@ -86,7 +85,7 @@ get_header();
 
       <?php
       $cats_home = array(
-        array( 'Leather & Fashion Bags', 'Timeless and trend-forward styles for brand collections.', 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/ChatGPT-Image-Oct-13-2026-06_01_58-PM.png', 'leather-fashion-bags' ),
+        array( 'Leather & Fashion Bags', 'Timeless and trend-forward styles for brand collections.',   'http://localhost/weldiore-theme/wp-content/uploads/2026/10/ChatGPT-Image-Oct-13-2026-06_01_58-PM.png', 'leather-fashion-bags' ),
         array( 'Laptop & Work Bags',     'Professional carry solutions for work and business.',        'http://localhost/weldiore-theme/wp-content/uploads/2026/10/ChatGPT-Image-Oct-13-2026-06_09_51-PM.png', 'laptop-work-bags' ),
         array( 'Tote Bags',              'Versatile silhouettes for retail and lifestyle labels.',     'http://localhost/weldiore-theme/wp-content/uploads/2026/10/ChatGPT-Image-Oct-13-2026-06_12_05-PM.png', 'tote-bags' ),
         array( 'Handbags',               'Structured and everyday handbag designs.',                   'http://localhost/weldiore-theme/wp-content/uploads/2026/10/ChatGPT-Image-Oct-13-2026-06_14_29-PM.png', 'handbags' ),
@@ -130,11 +129,11 @@ get_header();
 
       <?php
       $popular = array(
-        array( 'Classic Leather Tote', 'Leather Bags', 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Leather-laptop-bag_page-0033.jpg' ),
-        array( 'Structured Handbag',   'Leather Bags', 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Leather-laptop-bag_page-0032.jpg' ),
-        array( 'Quilted Shoulder Bag', 'Fashion Bags', 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Leather-laptop-bag_page-0031.jpg' ),
-        array( 'Hobo Shoulder Bag',    'Fashion Bags', 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Leather-laptop-bag_page-0030.jpg' ),
-      );  
+        array( 'Classic Leather Tote', 'Leather Bags', 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/source_6acf0ffc6ed749a6c3ded438.jpg' ),
+        array( 'Structured Handbag',   'Leather Bags', 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/wmremove-transformed-1.png' ),
+        array( 'Quilted Shoulder Bag', 'Fashion Bags', 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/wmremove-transformed-3.png' ),
+        array( 'Hobo Shoulder Bag',    'Fashion Bags', 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/wmremove-transformed-4.png' ),
+      );
       ?>
 
       <div class="pop-grid">
@@ -144,7 +143,7 @@ get_header();
             <img src="<?php echo esc_url( $p[2] ); ?>" alt="<?php echo esc_attr( $p[0] ); ?>">
           </span>
           <span class="pop-meta">
-            <span>  
+            <span>
               <strong><?php echo esc_html( $p[0] ); ?></strong>
               <em><?php echo esc_html( $p[1] ); ?></em>
             </span>
