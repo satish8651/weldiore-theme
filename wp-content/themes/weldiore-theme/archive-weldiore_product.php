@@ -1,4 +1,6 @@
-<?php get_header(); ?><main>
+<?php get_header(); ?>
+
+<main>
     <div class="container">
         <section class="page-hero">
             <div class="eyebrow">Weldiore catalogue</div>

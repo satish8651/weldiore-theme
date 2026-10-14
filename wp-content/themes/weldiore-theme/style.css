@@ -158,7 +158,8 @@ p {
     position: sticky;
     top: 0;
     z-index: 50;
-    background: rgba(247, 243, 237, .95);
+    background: rgba(26, 24, 22, 0.95);
+    /* background: #2A1D15; */
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(48, 35, 31, .09)
 }
@@ -206,7 +207,8 @@ p {
 }
 
 .main-nav a:not(.btn) {
-    color: #514841
+    /* color: #514841 */
+    color: #ffffff
 }
 
 .main-nav a:not(.btn):hover {
@@ -941,7 +943,8 @@ p {
 
 .entry-content a {
     text-decoration: underline;
-    color: var(--cognac)
+    /* color: var(--cognac) */
+    color: var(--white)
 }
 
 @media(max-width:1000px) {
@@ -3847,3 +3850,6 @@ p {
 .site-header .main-nav a {
     white-space: nowrap;
 }
+
+
+/* ------------------------------------------ */

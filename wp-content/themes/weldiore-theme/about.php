@@ -3,7 +3,9 @@
 Template Name: About Page
 */
 get_header();
+
 $img = get_template_directory_uri() . '';
+
 
 $chips   = array( 'Low MOQ', 'Private label', 'Free sampling', 'Export ready' );
 $buyers  = array( 'Fashion brands', 'Retail chains', 'Corporate gifting', 'Distributors', 'Hotels & hospitality', 'E-commerce sellers', 'Schools & universities', 'Importers' );
@@ -178,7 +180,7 @@ $faqs = array(
       <div class="ab2-btns">
         <a class="ab2-btn ab2-btn-light" href="<?php echo esc_url( home_url( '/request-a-quote/' ) ); ?>">Request a
           Quote <i aria-hidden="true">↗</i></a>
-        <a class="ab2-btn ab2-btn-ghost" href="https://wa.me/918651868361" target="_blank" rel="noopener">WhatsApp
+        <a class="ab2-btn ab2-btn-ghost" href="https://wa.me/918920458314" target="_blank" rel="noopener">WhatsApp
           Us</a>
       </div>
     </div>
@@ -276,7 +278,7 @@ $faqs = array(
         <!-- Main Heading & Legal Info -->
         <h3 class="wx-corp-title">
           <strong>WELDIORE CRAFTED FOR A BETTER TOMORROW.</strong>
-          <small>(CIN: U46410WB2024PTC275166)</small>
+          <!-- <small>(CIN: U46410WB2024PTC275166)</small> -->
         </h3>
 
         <p class="wx-corp-desc">
@@ -289,14 +291,15 @@ $faqs = array(
           <div class="wx-corp-info-item">
             <span class="wx-info-label">FACTORY ADDRESS</span>
             <address class="wx-info-val">
-              57/N M.D. Kalachand Road, Musalman Para,<br>
-              Agarpara, Kolkata – 700111, West Bengal, India
+              Office : T-564, 2nd. Floor
+              Gift Chamber, Chamelian Road Ahata Kidara, Near Idgah<br>
+              Goal Chakker, Sadar Bazar Delhi-110006
             </address>
           </div>
 
           <div class="wx-corp-info-item">
             <span class="wx-info-label">OFFICE TELEPHONE</span>
-            <a class="wx-info-val wx-link" href="tel:+913331997211">+91 33 3199 7211</a>
+            <a class="wx-info-val wx-link" href="tel:+9189204 58314">+91 8920458314 <br> Email: arnoenterprises4@gmail.com</a>
           </div>
         </div>
 
