@@ -17,7 +17,7 @@
 
             <a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Weldiore home">
                 <img class="brand-logo"
-                    src="http://localhost/weldiore-theme/wp-content/uploads/2026/10/WELDIORE_original_logo_clear-2.png"
+                    src="http://localhost/weldiore-theme/wp-content/uploads/2026/10/WELDIORE_original_logo_clear__1_-removebg-preview.png"
                     alt="Weldiore" height="52" style="height:52px;width:auto;max-width:220px;display:block;">
             </a>
 

@@ -283,7 +283,8 @@ get_header();
   </section>
 
   <!-- CTA band -->
-  <section class="cb">
+ <section class="cb" style="background-image:url('http://localhost/weldiore-theme/wp-content/uploads/2026/10/Dewatermark_1791957501088.png');">
+    <div class="cb-shade"></div>
     <div class="cb-wrap">
       <div class="cb-text">
         <small>LET'S CREATE SOMETHING TOGETHER</small>
@@ -291,12 +292,11 @@ get_header();
         <p>Tell us about your products, target quantity and requirements. We reply within 24 hours.</p>
       </div>
       <div class="cb-btns">
-        <a class="cb-btn cb-btn-solid" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Request a Quote <span
-            aria-hidden="true">↗</span></a>
+        <a class="cb-btn cb-btn-solid" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Request a Quote <span aria-hidden="true">↗</span></a>
         <a class="cb-btn cb-btn-ghost" href="https://wa.me/918100611554" target="_blank" rel="noopener">WhatsApp Us</a>
       </div>
     </div>
-  </section>
+</section>
 
 </main>
 

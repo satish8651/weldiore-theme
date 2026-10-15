@@ -3853,3 +3853,513 @@ p {
 
 
 /* ------------------------------------------ */
+
+.ab2-cta {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--espresso);
+    overflow: hidden;
+}
+
+.ab2-cta-shade {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, var(--espresso) 15%, transparent 100%);
+    opacity: .88;
+}
+
+.ab2-cta .ab2-cta-in {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* Custom Manufacturing Button */
+.ab2 .ab2-custom-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 13px 22px;
+    margin-top: 18px;
+
+    background: #f3e6d0;
+    color: #30221d;
+    border: 1px solid #d8bd91;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.ab2 .ab2-custom-btn span {
+    font-size: 20px;
+    line-height: 1;
+    transition: transform 0.3s ease;
+}
+
+.ab2 .ab2-custom-btn:hover {
+    background: #c6a574;
+    color: #ffffff;
+    border-color: #c6a574;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+.ab2 .ab2-custom-btn:hover span {
+    transform: translateX(5px);
+}
+
+.ab2 .ab2-custom-btn:focus-visible {
+    outline: 2px solid #f3e6d0;
+    outline-offset: 4px;
+}
+
+/* CONTACT US PAGE CODE START HERE.------------------------------------------------------------------------------------------------------ */
+
+/* ----Md. Hasan ARNO ENTERPRISES • EST. 2024------------------------------------------------------------------------------------------------------------------------- */
+
+
+ .wx-contact-section {
+    padding: 80px 20px;
+    background-color: #f7f3ed;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wx-card-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(48, 35, 31, 0.12);
+    border: 1px solid #e5ddd4;
+  }
+
+  /* Left Side - Image Box */
+  .wx-card-media {
+    flex: 1;
+    min-width: 420px;
+    position: relative;
+    background-color: #30231f;
+  }
+
+  .wx-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .wx-location-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: rgba(37, 27, 24, 0.85);
+    color: #f7f3ed;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Right Side - Content Box */
+  .wx-card-content {
+    flex: 1.2;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+  }
+
+  .wx-badge-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .wx-pill-tag {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+
+  .wx-pill-dark {
+    background: #30231f;
+    color: #ffffff;
+  }
+
+  .wx-pill-light {
+    background: #f7f3ed;
+    color: #9a6443;
+    border: 1px solid #d7cec3;
+  }
+
+  .wx-title {
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    color: #252525;
+    margin: 0 0 6px 0;
+    line-height: 1.1;
+  }
+
+  .wx-subtitle {
+    font-size: 0.82rem;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    color: #9a6443;
+    margin: 0 0 24px 0;
+    text-transform: uppercase;
+  }
+
+  .wx-subtitle span {
+    color: #71685f;
+    font-weight: 500;
+  }
+
+  /* Meta Pills / Info Badges */
+  .wx-info-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .wx-info-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    background: #f7f3ed;
+    border: 1px solid #e5ddd4;
+    font-size: 0.75rem;
+    color: #30231f;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+
+  .wx-info-chip-accent {
+    background: #f4ece4;
+    color: #9a6443;
+    border-color: #e5d3c4;
+  }
+
+  /* Description Body */
+  .wx-bio-text {
+    font-size: 0.92rem;
+    color: #71685f;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
+  .wx-bio-text p {
+    margin: 0 0 12px 0;
+  }
+
+  .wx-bio-text strong {
+    color: #252525;
+  }
+
+  .wx-quote-text {
+    font-style: italic;
+    color: #4a3e39;
+    border-left: 3px solid #9a6443;
+    padding-left: 12px;
+    margin-top: 12px;
+  }
+
+  /* Action Buttons */
+  .wx-action-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .wx-btn-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 22px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+  }
+
+  .wx-btn-dark {
+    background: #30231f;
+    color: #ffffff !important;
+  }
+
+  .wx-btn-dark:hover {
+    background: #9a6443;
+  }
+
+  .wx-btn-green {
+    background: #25d366;
+    color: #ffffff !important;
+  }
+
+  .wx-btn-green:hover {
+    background: #1eb956;
+  }
+
+  .wx-btn-outline {
+    background: transparent;
+    color: #30231f !important;
+    border: 1px solid #d7cec3;
+  }
+
+  .wx-btn-outline:hover {
+    background: #f7f3ed;
+    border-color: #30231f;
+  }
+
+  /* Responsive Design for Mobile */
+  @media (max-width: 900px) {
+    .wx-card-container {
+      flex-direction: column;
+    }
+    .wx-card-media {
+      min-height: 320px;
+      min-width: 100%;
+    }
+    .wx-card-content {
+      padding: 28px 20px;
+    }
+  }
+
+
+
+  /* ------------------------------------------- */
+
+
+  /* ==========================================
+   Corporate Details & Edge-to-Edge Live Location Section
+   ========================================== */
+
+.wx-corp-section {
+  padding: 40px 0; /* Top-bottom padding rakhi hai, left-right padding zero hai */
+  background-color: var(--ivory, #f7f3ed);
+  width: 100%;
+}
+
+/* Outer Wrapper (Poori screen width cover karne ke liye) */
+.wx-corp-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 20px; /* Screen ke extreme edges par chipakne se bachane ke liye minimal padding */
+  box-sizing: border-box;
+}
+
+/* Address Card */
+.wx-corp-card {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 45px 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e2d9cf;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Badge Top */
+.wx-corp-badge {
+  margin-bottom: 18px;
+}
+
+.wx-corp-badge span {
+  background: #f4ece4;
+  color: #8c634b;
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  padding: 7px 18px;
+  border-radius: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* Main Title & Description */
+.wx-corp-title {
+  font-family: var(--serif, Georgia, serif);
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: #2b221e;
+  letter-spacing: 0.02em;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+
+.wx-corp-desc {
+  font-size: 0.88rem;
+  color: #6b625a;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Dashed Divider Line */
+.wx-corp-divider {
+  border-bottom: 1px dashed #d8cecf;
+  margin: 24px 0;
+  width: 100%;
+}
+
+/* Info Grid (Address & Phone/Email) */
+.wx-corp-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  text-align: center;
+}
+
+.wx-corp-label {
+  display: block;
+  font-size: 0.70rem;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  color: #9a6443;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.wx-corp-address {
+  font-style: normal;
+  font-size: 0.85rem;
+  color: #332d29;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+.wx-corp-val {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #2b221e;
+  display: block;
+}
+
+.wx-corp-email {
+  font-size: 0.85rem;
+  color: #332d29;
+  margin-top: 4px;
+}
+
+.wx-corp-link {
+  color: #2b221e;
+  text-decoration: none;
+}
+
+.wx-corp-link:hover {
+  color: #9a6443;
+  text-decoration: underline;
+}
+
+/* Button */
+.wx-corp-action {
+  display: flex;
+  justify-content: center;
+}
+
+.wx-corp-btn {
+  background: #a36a49;
+  color: #ffffff !important;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 14px 34px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.25s ease;
+  box-shadow: 0 2px 6px rgba(163, 106, 73, 0.2);
+}
+
+.wx-corp-btn:hover {
+  background: #30231f;
+}
+
+/* Map Card - Full Width & Height Reduced */
+.wx-corp-map-card {
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #e2d9cf;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.wx-corp-map-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #9a6443;
+  margin-bottom: 12px;
+  padding-left: 4px;
+}
+
+.wx-corp-map-frame {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #e5ddd4;
+}
+
+/* Map ki height yahan kam karke 300px kar di gayi hai */
+.wx-corp-map-frame iframe {
+  display: block;
+  width: 100%;
+  height: 300px; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wx-corp-card {
+    padding: 25px 15px;
+  }
+
+  .wx-corp-info-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .wx-corp-map-frame iframe {
+    height: 240px;
+  }
+}

@@ -101,7 +101,8 @@ $faqs = array(
   </section>
 
   <!-- 5. Bento -->
-  <section class="ab2-why">
+   <!-- ------------------------------------------------ -->
+      <section class="ab2-why">
     <div class="ab2-wrap">
       <div class="ab2-head">
         <small>WHY BRANDS CHOOSE US</small>
@@ -111,7 +112,14 @@ $faqs = array(
         <article class="b-lg b-dark">
           <h3>Custom design and private label</h3>
           <p>From sketch to finished bag. Your logo, hardware, lining and packaging, made to spec.</p><a
-            href="<?php echo esc_url( home_url( '/custom-manufacturing/' ) ); ?>">Explore custom manufacturing →</a>
+            
+          
+<a class="ab2-custom-btn" href="<?php echo esc_url( home_url( '/custom-manufacturing/' ) ); ?>">
+    Explore Custom Manufacturing
+    <span aria-hidden="true">→</span>
+</a>
+
+
         </article>
         <article>
           <h3>Low MOQ</h3>
@@ -170,7 +178,10 @@ $faqs = array(
   </section>
 
   <!-- 8. CTA -->
-  <section class="ab2-cta">
+  <section class="ab2-cta"
+    style="background-image:url('<?php echo esc_url( 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Gemini_Generated_Image_2y1t5i2y1t5i2y1t.jpeg' ); ?>');">
+    <div class="ab2-cta-shade">
+    </div>
     <div class="ab2-wrap ab2-cta-in">
       <div>
         <small>LET'S CREATE SOMETHING TOGETHER</small>
@@ -262,58 +273,7 @@ $faqs = array(
     </div>
   </section>
 
-  <!-- -------REGISTERED B2B EXPORTER & MANUFACTURER------------------------------------------------------------------------------------------- -->
-
-  <!-- Weldiore B2B Corporate Info & Contact Section -->
-  <section class="wx-corp-section">
-    <div class="wx-corp-container">
-      <div class="wx-corp-card">
-
-        <!-- Top Decorative Badge -->
-        <div class="wx-corp-badge">
-          <span class="wx-badge-icon">✓</span>
-          <span>REGISTERED B2B EXPORTER & MANUFACTURER</span>
-        </div>
-
-        <!-- Main Heading & Legal Info -->
-        <h3 class="wx-corp-title">
-          <strong>WELDIORE CRAFTED FOR A BETTER TOMORROW.</strong>
-          <!-- <small>(CIN: U46410WB2024PTC275166)</small> -->
-        </h3>
-
-        <p class="wx-corp-desc">
-          Registered under the Companies Act 2013. Operating state-of-the-art leather manufacturing facility for global
-          brands.
-        </p>
-
-        <!-- Grid Info Details -->
-        <div class="wx-corp-grid">
-          <div class="wx-corp-info-item">
-            <span class="wx-info-label">FACTORY ADDRESS</span>
-            <address class="wx-info-val">
-              Office : T-564, 2nd. Floor
-              Gift Chamber, Chamelian Road Ahata Kidara, Near Idgah<br>
-              Goal Chakker, Sadar Bazar Delhi-110006
-            </address>
-          </div>
-
-          <div class="wx-corp-info-item">
-            <span class="wx-info-label">OFFICE TELEPHONE</span>
-            <a class="wx-info-val wx-link" href="tel:+9189204 58314">+91 8920458314 <br> Email: arnoenterprises4@gmail.com</a>
-          </div>
-        </div>
-
-        <!-- Call to Action Button -->
-        <div class="wx-corp-action">
-          <a class="wx-btn-export" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">
-            <span>CONTACT OUR EXPORT TEAM</span>
-            <i class="wx-arrow" aria-hidden="true">→</i>
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
+  
 
 </main>
 

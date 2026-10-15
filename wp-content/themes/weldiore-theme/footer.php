@@ -12,13 +12,13 @@
                 <div class="footer-links"><a href="<?php echo esc_url(home_url('/products/')); ?>">Products</a><a
                         href="<?php echo esc_url(home_url('/custom-manufacturing/')); ?>">Custom Manufacturing</a><a
                         href="<?php echo esc_url(home_url('/manufacturing-quality/')); ?>">Capabilities</a><a
-                        href="<?php echo esc_url(home_url('/about-weldiore/')); ?>">About Weldiore</a></div>
+                        href="<?php echo esc_url(home_url('/about/')); ?>">About Weldiore</a></div>
             </div>
             <div>
                 <h4>For Business</h4>
                 <div class="footer-links"><a href="<?php echo esc_url(home_url('/request-a-quote/')); ?>">Request a
                         Quote</a><a href="<?php echo esc_url(home_url('/industries-served/')); ?>">Industries
-                        Served</a><a href="<?php echo esc_url(home_url('/insights/')); ?>">Insights</a><a
+                        Served</a><a
                         href="<?php echo esc_url(home_url('/contact/')); ?>">Contact</a></div>
             </div>
             <div>
