@@ -439,7 +439,12 @@ p {
 }
 
 .product-card {
-    min-width: 0
+    font-family: var(--serif);
+    font-weight: 400;
+    /* color: var(--white); */
+    color: var(--ink);
+    margin: 0 0 6px;
+    /* min-width: 0 */
 }
 
 .product-image {
@@ -1589,7 +1594,7 @@ p {
 }
 
 .sbc-head small {
-    display: block;
+      display: block;
     color: var(--cognac);
     font-family: var(--sans);
     font-weight: 700;
@@ -1617,24 +1622,70 @@ p {
     gap: 18px;
 }
 
-.sbc-card {
+/* .sbc-card {
     position: relative;
     display: block;
     height: 330px;
     overflow: hidden;
     border-radius: var(--radius);
     background: var(--espresso);
-}
+} */
 
-.sbc-card img {
-    position: absolute;
+/* .sbc-card img {
+     position: absolute;
     inset: 0;
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: cover;
     display: block;
     transition: transform .6s ease;
+} */
+
+/* .sbc-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Isse image bilkul nahi kategi aur poori dikhegi */
+/* background-color: #fcf9f5; Card ke background se match karta hua color, taaki empty space achi lage */
+/* display: block; */
+/* transition: transform .6s ease; */
+/* }  */
+
+/* .sbc-card img {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    background-color: #1a1a1a !important; /* Image ke side me jo space bachegi wahan dark background aa jayega */
+/* }  */
+
+/* Card ki rigid height ko hatayein taaki wo image ke hisaab se adjust ho */
+.sbc-card {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    background: transparent !important;
 }
+
+/* Image ko natural aspect ratio dein taaki kate nahi aur space bhi na bache */
+.sbc-card img {
+    position: static !important;
+    /* Absolute hata diya */
+    width: 100% !important;
+    height: 100% !important;
+    /* Height auto se image apni poori original shape me ayegi */
+    object-fit: unset !important;
+    background-color: transparent !important;
+    display: block !important;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+
+
 
 .sbc-card:hover img {
     transform: scale(1.06);
@@ -3929,16 +3980,16 @@ p {
 /* ----Md. Hasan ARNO ENTERPRISES • EST. 2024------------------------------------------------------------------------------------------------------------------------- */
 
 
- .wx-contact-section {
+.wx-contact-section {
     padding: 80px 20px;
     background-color: #f7f3ed;
     min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .wx-card-container {
+.wx-card-container {
     display: flex;
     flex-direction: row;
     max-width: 1100px;
@@ -3948,24 +3999,24 @@ p {
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(48, 35, 31, 0.12);
     border: 1px solid #e5ddd4;
-  }
+}
 
-  /* Left Side - Image Box */
-  .wx-card-media {
+/* Left Side - Image Box */
+.wx-card-media {
     flex: 1;
     min-width: 420px;
     position: relative;
     background-color: #30231f;
-  }
+}
 
-  .wx-card-media img {
+.wx-card-media img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-  }
+}
 
-  .wx-location-badge {
+.wx-location-badge {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -3980,75 +4031,75 @@ p {
     font-weight: 600;
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-  }
+}
 
-  /* Right Side - Content Box */
-  .wx-card-content {
+/* Right Side - Content Box */
+.wx-card-content {
     flex: 1.2;
     padding: 48px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: #ffffff;
-  }
+}
 
-  .wx-badge-row {
+.wx-badge-row {
     display: flex;
     gap: 10px;
     margin-bottom: 16px;
-  }
+}
 
-  .wx-pill-tag {
+.wx-pill-tag {
     font-size: 0.68rem;
     font-weight: 700;
     letter-spacing: 0.12em;
     padding: 6px 14px;
     border-radius: 20px;
     text-transform: uppercase;
-  }
+}
 
-  .wx-pill-dark {
+.wx-pill-dark {
     background: #30231f;
     color: #ffffff;
-  }
+}
 
-  .wx-pill-light {
+.wx-pill-light {
     background: #f7f3ed;
     color: #9a6443;
     border: 1px solid #d7cec3;
-  }
+}
 
-  .wx-title {
+.wx-title {
     font-family: Georgia, serif;
     font-size: 2.5rem;
     color: #252525;
     margin: 0 0 6px 0;
     line-height: 1.1;
-  }
+}
 
-  .wx-subtitle {
+.wx-subtitle {
     font-size: 0.82rem;
     letter-spacing: 0.15em;
     font-weight: 700;
     color: #9a6443;
     margin: 0 0 24px 0;
     text-transform: uppercase;
-  }
+}
 
-  .wx-subtitle span {
+.wx-subtitle span {
     color: #71685f;
     font-weight: 500;
-  }
+}
 
-  /* Meta Pills / Info Badges */
-  .wx-info-pills {
+/* Meta Pills / Info Badges */
+.wx-info-pills {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 24px;
-  }
+}
 
-  .wx-info-chip {
+.wx-info-chip {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -4059,46 +4110,46 @@ p {
     color: #30231f;
     border-radius: 6px;
     font-weight: 600;
-  }
+}
 
-  .wx-info-chip-accent {
+.wx-info-chip-accent {
     background: #f4ece4;
     color: #9a6443;
     border-color: #e5d3c4;
-  }
+}
 
-  /* Description Body */
-  .wx-bio-text {
+/* Description Body */
+.wx-bio-text {
     font-size: 0.92rem;
     color: #71685f;
     line-height: 1.7;
     margin-bottom: 28px;
-  }
+}
 
-  .wx-bio-text p {
+.wx-bio-text p {
     margin: 0 0 12px 0;
-  }
+}
 
-  .wx-bio-text strong {
+.wx-bio-text strong {
     color: #252525;
-  }
+}
 
-  .wx-quote-text {
+.wx-quote-text {
     font-style: italic;
     color: #4a3e39;
     border-left: 3px solid #9a6443;
     padding-left: 12px;
     margin-top: 12px;
-  }
+}
 
-  /* Action Buttons */
-  .wx-action-row {
+/* Action Buttons */
+.wx-action-row {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-  }
+}
 
-  .wx-btn-item {
+.wx-btn-item {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -4109,257 +4160,499 @@ p {
     border-radius: 6px;
     text-decoration: none;
     transition: all 0.25s ease;
-  }
+}
 
-  .wx-btn-dark {
+.wx-btn-dark {
     background: #30231f;
     color: #ffffff !important;
-  }
+}
 
-  .wx-btn-dark:hover {
+.wx-btn-dark:hover {
     background: #9a6443;
-  }
+}
 
-  .wx-btn-green {
+.wx-btn-green {
     background: #25d366;
     color: #ffffff !important;
-  }
+}
 
-  .wx-btn-green:hover {
+.wx-btn-green:hover {
     background: #1eb956;
-  }
+}
 
-  .wx-btn-outline {
+.wx-btn-outline {
     background: transparent;
     color: #30231f !important;
     border: 1px solid #d7cec3;
-  }
+}
 
-  .wx-btn-outline:hover {
+.wx-btn-outline:hover {
     background: #f7f3ed;
     border-color: #30231f;
-  }
+}
 
-  /* Responsive Design for Mobile */
-  @media (max-width: 900px) {
+/* Responsive Design for Mobile */
+@media (max-width: 900px) {
     .wx-card-container {
-      flex-direction: column;
+        flex-direction: column;
     }
+
     .wx-card-media {
-      min-height: 320px;
-      min-width: 100%;
+        min-height: 320px;
+        min-width: 100%;
     }
+
     .wx-card-content {
-      padding: 28px 20px;
+        padding: 28px 20px;
     }
-  }
+}
 
 
 
-  /* ------------------------------------------- */
+/* ------------------------------------------- */
 
 
-  /* ==========================================
+/* ==========================================
    Corporate Details & Edge-to-Edge Live Location Section
    ========================================== */
 
 .wx-corp-section {
-  padding: 40px 0; /* Top-bottom padding rakhi hai, left-right padding zero hai */
-  background-color: var(--ivory, #f7f3ed);
-  width: 100%;
+    padding: 40px 0;
+    /* Top-bottom padding rakhi hai, left-right padding zero hai */
+    background-color: var(--ivory, #f7f3ed);
+    width: 100%;
 }
 
 /* Outer Wrapper (Poori screen width cover karne ke liye) */
 .wx-corp-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0 20px; /* Screen ke extreme edges par chipakne se bachane ke liye minimal padding */
-  box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    /* Screen ke extreme edges par chipakne se bachane ke liye minimal padding */
+    box-sizing: border-box;
 }
 
 /* Address Card */
 .wx-corp-card {
-  background: #ffffff;
-  border-radius: 6px;
-  padding: 45px 30px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-  border: 1px solid #e2d9cf;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 45px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2d9cf;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Badge Top */
 .wx-corp-badge {
-  margin-bottom: 18px;
+    margin-bottom: 18px;
 }
 
 .wx-corp-badge span {
-  background: #f4ece4;
-  color: #8c634b;
-  font-size: 0.68rem;
-  letter-spacing: 0.15em;
-  font-weight: 700;
-  padding: 7px 18px;
-  border-radius: 20px;
-  display: inline-block;
-  text-transform: uppercase;
+    background: #f4ece4;
+    color: #8c634b;
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    padding: 7px 18px;
+    border-radius: 20px;
+    display: inline-block;
+    text-transform: uppercase;
 }
 
 /* Main Title & Description */
 .wx-corp-title {
-  font-family: var(--serif, Georgia, serif);
-  font-size: 1.55rem;
-  font-weight: 600;
-  color: #2b221e;
-  letter-spacing: 0.02em;
-  margin: 0 0 10px 0;
-  text-transform: uppercase;
+    font-family: var(--serif, Georgia, serif);
+    font-size: 1.55rem;
+    font-weight: 600;
+    color: #2b221e;
+    letter-spacing: 0.02em;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
 }
 
 .wx-corp-desc {
-  font-size: 0.88rem;
-  color: #6b625a;
-  max-width: 650px;
-  margin: 0 auto;
-  line-height: 1.6;
+    font-size: 0.88rem;
+    color: #6b625a;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 /* Dashed Divider Line */
 .wx-corp-divider {
-  border-bottom: 1px dashed #d8cecf;
-  margin: 24px 0;
-  width: 100%;
+    border-bottom: 1px dashed #d8cecf;
+    margin: 24px 0;
+    width: 100%;
 }
 
 /* Info Grid (Address & Phone/Email) */
 .wx-corp-info-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    text-align: center;
 }
 
 .wx-corp-label {
-  display: block;
-  font-size: 0.70rem;
-  letter-spacing: 0.16em;
-  font-weight: 700;
-  color: #9a6443;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+    display: block;
+    font-size: 0.70rem;
+    letter-spacing: 0.16em;
+    font-weight: 700;
+    color: #9a6443;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .wx-corp-address {
-  font-style: normal;
-  font-size: 0.85rem;
-  color: #332d29;
-  line-height: 1.55;
-  font-weight: 500;
+    font-style: normal;
+    font-size: 0.85rem;
+    color: #332d29;
+    line-height: 1.55;
+    font-weight: 500;
 }
 
 .wx-corp-val {
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: #2b221e;
-  display: block;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #2b221e;
+    display: block;
 }
 
 .wx-corp-email {
-  font-size: 0.85rem;
-  color: #332d29;
-  margin-top: 4px;
+    font-size: 0.85rem;
+    color: #332d29;
+    margin-top: 4px;
 }
 
 .wx-corp-link {
-  color: #2b221e;
-  text-decoration: none;
+    color: #2b221e;
+    text-decoration: none;
 }
 
 .wx-corp-link:hover {
-  color: #9a6443;
-  text-decoration: underline;
+    color: #9a6443;
+    text-decoration: underline;
 }
 
 /* Button */
 .wx-corp-action {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .wx-corp-btn {
-  background: #a36a49;
-  color: #ffffff !important;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  padding: 14px 34px;
-  border-radius: 4px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: background 0.25s ease;
-  box-shadow: 0 2px 6px rgba(163, 106, 73, 0.2);
+    background: #a36a49;
+    color: #ffffff !important;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    padding: 14px 34px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.25s ease;
+    box-shadow: 0 2px 6px rgba(163, 106, 73, 0.2);
 }
 
 .wx-corp-btn:hover {
-  background: #30231f;
+    background: #30231f;
 }
 
 /* Map Card - Full Width & Height Reduced */
 .wx-corp-map-card {
-  background: #ffffff;
-  border-radius: 6px;
-  border: 1px solid #e2d9cf;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-  padding: 16px;
-  width: 100%;
-  box-sizing: border-box;
+    background: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #e2d9cf;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .wx-corp-map-head {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  color: #9a6443;
-  margin-bottom: 12px;
-  padding-left: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: #9a6443;
+    margin-bottom: 12px;
+    padding-left: 4px;
 }
 
 .wx-corp-map-frame {
-  width: 100%;
-  border-radius: 4px;
-  overflow: hidden;
-  border: 1px solid #e5ddd4;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #e5ddd4;
 }
 
 /* Map ki height yahan kam karke 300px kar di gayi hai */
 .wx-corp-map-frame iframe {
-  display: block;
-  width: 100%;
-  height: 300px; 
+    display: block;
+    width: 100%;
+    height: 300px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .wx-corp-card {
-    padding: 25px 15px;
-  }
+    .wx-corp-card {
+        padding: 25px 15px;
+    }
 
-  .wx-corp-info-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+    .wx-corp-info-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 
-  .wx-corp-map-frame iframe {
-    height: 240px;
-  }
+    .wx-corp-map-frame iframe {
+        height: 240px;
+    }
+}
+
+
+/* ----------------------------------------- */
+
+.featured-products {
+    background-color: var(--wp--preset--color--background, #fcf9f5);
+    /* Global background variable ya fallback */
+    padding: 40px 20px;
+}
+
+/* Header Styling - Global typography inherit karega */
+.fp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+
+/* .fp-subheading { */
+    /* font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--wp--preset--color--primary, #a47148);
+    /* Global primary color */
+    /* text-transform: uppercase; */
+    /* display: block; */
+    /* margin-bottom: 5px; */ */
+/* } */
+
+.fp-main-heading {
+    font-family: inherit;
+    /* Parent theme ka main heading font */
+    font-size: 28px;
+    font-weight: 500;
+    color: inherit;
+    /* Global text color */
+    margin: 0;
+}
+
+.fp-view-all {
+    font-size: 13px;
+    font-weight: 500;
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.fp-view-all:hover {
+    opacity: 1;
+}
+
+/* Product Cards & Typography */
+.product-slider .product-card {
+    padding: 0 10px;
+}
+
+.product-img-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    display: block;
+}
+
+.product-info {
+    margin-top: 15px;
+}
+
+.product-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-info h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: inherit;
+    /* Global text color */
+    margin: 0;
+}
+
+.arrow-icon {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.product-category {
+    font-size: 12px;
+    color: inherit;
+    /* Global text color */
+    opacity: 0.7;
+    /* Thoda light shade dene ke liye */
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+
+.product-card a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.product-card img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.03);
+}
+
+
+
+
+/* ------------------------------------------------ */
+
+
+
+/* ---------- Featured Products Slider ---------- */
+.featured-products { 
+    background: var(--ivory, #fdfbf7); 
+    padding: 60px 0; 
+    overflow: hidden; 
+}
+
+.product-slider { 
+    width: min(100% - 48px, 1600px); 
+    margin-inline: auto; 
+    position: relative; 
+}
+
+.product-slider .slick-list { 
+    margin: 0 -12px; 
+}
+
+.product-slider .slick-track { 
+    display: flex !important; 
+    align-items: stretch; 
+}
+
+.product-slider .slick-slide { 
+    height: inherit !important; 
+    display: flex !important; 
+    padding: 0 12px;
+}
+
+.product-slider .slick-slide > div { 
+    display: flex; 
+    width: 100%; 
+}
+
+.product-card { 
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+}
+
+/* Image container with 1452x1764 exact proportion */
+.product-card .pc-img { 
+    display: block; 
+    width: 100%;
+    aspect-ratio: 1452 / 1764; 
+    overflow: hidden; 
+    border-radius: 16px; 
+    background: #e5e5e5; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06); 
+}
+
+.product-card .pc-img img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.5s ease; 
+}
+
+.product-card:hover .pc-img img { 
+    transform: scale(1.04); 
+}
+
+.product-card h3 { 
+    margin: 14px 0 4px; 
+    font-size: 1rem; 
+    font-weight: 600; 
+    color: #1a1a1a; 
+}
+
+.product-card h3 a { 
+    color: inherit; 
+    text-decoration: none; 
+    transition: color 0.2s;
+}
+
+.product-card h3 a:hover { 
+    color: #b85d33; 
+}
+
+.product-card p { 
+    margin: 0; 
+    font-size: 0.85rem; 
+    color: #666; 
+}
+
+/* Slider Arrows */
+.ps-arrow { 
+    position: absolute; 
+    top: 42%; 
+    transform: translateY(-50%); 
+    z-index: 10; 
+    width: 44px; 
+    height: 44px; 
+    border: none; 
+    border-radius: 50%; 
+    background: rgba(0, 0, 0, 0.6); 
+    color: #fff; 
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s; 
+}
+.ps-arrow:hover { 
+    background: #b85d33; 
+}
+.ps-prev { 
+    left: -20px; 
+}
+.ps-next { 
+    right: -20px; 
+}
+.ps-arrow.slick-disabled { 
+    opacity: 0.2; 
+    cursor: default; 
 }

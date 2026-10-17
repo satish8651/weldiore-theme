@@ -101,8 +101,8 @@ $faqs = array(
   </section>
 
   <!-- 5. Bento -->
-   <!-- ------------------------------------------------ -->
-      <section class="ab2-why">
+  <!-- ------------------------------------------------ -->
+  <section class="ab2-why">
     <div class="ab2-wrap">
       <div class="ab2-head">
         <small>WHY BRANDS CHOOSE US</small>
@@ -111,13 +111,11 @@ $faqs = array(
       <div class="ab2-bento">
         <article class="b-lg b-dark">
           <h3>Custom design and private label</h3>
-          <p>From sketch to finished bag. Your logo, hardware, lining and packaging, made to spec.</p><a
-            
-          
-<a class="ab2-custom-btn" href="<?php echo esc_url( home_url( '/custom-manufacturing/' ) ); ?>">
-    Explore Custom Manufacturing
-    <span aria-hidden="true">→</span>
-</a>
+          <p>From sketch to finished bag. Your logo, hardware, lining and packaging, made to spec.</p><a <a
+            class="ab2-custom-btn" href="<?php echo esc_url( home_url( '/custom-manufacturing/' ) ); ?>">
+            Explore Custom Manufacturing
+            <span aria-hidden="true">→</span>
+          </a>
 
 
         </article>
@@ -179,7 +177,7 @@ $faqs = array(
 
   <!-- 8. CTA -->
   <section class="ab2-cta"
-    style="background-image:url('<?php echo esc_url( 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Gemini_Generated_Image_2y1t5i2y1t5i2y1t.jpeg' ); ?>');">
+    style="background-image:url('<?php echo esc_url( 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Gemini_Generated_Image_clk8bfclk8bfclk8-e62a3c83-2f7a-4e68-bc73-80319fcba91f.png' ); ?>');">
     <div class="ab2-cta-shade">
     </div>
     <div class="ab2-wrap ab2-cta-in">
@@ -230,7 +228,7 @@ $faqs = array(
       array(
         'title'    => 'Custom Handbag Display',
         'category' => 'Private Label',
-        'img'      => 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Gemini_Generated_Image_2y1t5i2y1t5i2y1t.jpeg',
+        'img'      => 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Arno-Enterprises-Leather-Laptop-Bag-2-87.png',
         'class'    => ''
       ),
       array(
@@ -273,7 +271,7 @@ $faqs = array(
     </div>
   </section>
 
-  
+
 
 </main>
 

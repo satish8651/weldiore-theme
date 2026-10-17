@@ -15,7 +15,7 @@ get_header();
       
       <!-- Left Profile Image Area -->
       <div class="wx-card-media">
-        <img src="<?php echo esc_url( ( 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/Gemini_Generated_Image_s3q5bys3q5bys3q5.png' ) ); ?>" alt="Md. Hasan - Founder">
+        <img src="<?php echo esc_url( ( 'http://localhost/weldiore-theme/wp-content/uploads/2026/10/71fc083c865c468dbc5ee9f1b450a3e7.png' ) ); ?>" alt="Md. Hasan - Founder">
         <div class="wx-location-badge">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
           DELHI, INDIA

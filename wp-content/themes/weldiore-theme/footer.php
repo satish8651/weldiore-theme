@@ -36,6 +36,99 @@
     </div>
 </footer>
 <div class="mobile-quote"><a class="btn" href="<?php echo esc_url(home_url('/request-a-quote/')); ?>">Request a Quote
-        ↗</a></div><?php wp_footer(); ?></body>
+        ↗</a></div><?php wp_footer(); ?>
+    
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+    
+    <script>
+jQuery(document).ready(function($) {
+    $('.product-slider').slick({
+        dots: true,             // Niche dots dikhane ke liye
+        infinite: true,         // Loop chalane ke liye
+        speed: 300,
+        slidesToShow: 4,        // Ek bar me kitne products dikhe
+        slidesToScroll: 1,      // Ek click par kitne scroll ho
+        autoplay: true,         // Auto scroll karne ke liye
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
+
+// -------------------------------------------------------
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".hx-slide");
+    const dotsContainer = document.querySelector(".hx-dots");
+
+    if (slides.length === 0 || !dotsContainer) return;
+
+    let currentIndex = 0;
+    const intervalTime = 5000;
+    let slideInterval;
+
+    slides.forEach((_, index) => {
+        const dot = document.createElement("button");
+        if (index === 0) dot.classList.add("on");
+        dot.addEventListener("click", () => {
+            goToSlide(index);
+            resetTimer();
+        });
+        dotsContainer.appendChild(dot);
+    });
+
+    const dots = dotsContainer.querySelectorAll("button");
+
+    function goToSlide(index) {
+        slides[currentIndex].classList.remove("active");
+        dots[currentIndex].classList.remove("on");
+
+        currentIndex = index;
+
+        slides[currentIndex].classList.add("active");
+        dots[currentIndex].classList.add("on");
+    }
+
+    function nextSlide() {
+        let nextIndex = (currentIndex + 1) % slides.length;
+        goToSlide(nextIndex);
+    }
+
+    function startTimer() {
+        slideInterval = setInterval(nextSlide, intervalTime);
+    }
+
+    function resetTimer() {
+        clearInterval(slideInterval);
+        startTimer();
+    }
+
+    startTimer();
+});
+</script>
+
+</script>
+    </body>
 
 </html>

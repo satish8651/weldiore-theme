@@ -115,3 +115,43 @@ function weldiore_seed_catalogue(){
 add_action('after_switch_theme','weldiore_seed_catalogue',20);
 add_action('admin_init','weldiore_seed_catalogue',30);
 
+// -----------------------
+
+
+// -------------------------------------------------------------
+
+
+function weldiore_product_slider_assets() {
+    if ( ! is_front_page() ) { return; }
+    
+    wp_enqueue_style( 'slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.8.1' );
+    wp_enqueue_style( 'slick-theme', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', array('slick'), '1.8.1' );
+    wp_enqueue_script( 'slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array( 'jquery' ), '1.8.1', true );
+    
+    wp_add_inline_script( 'slick', "
+        jQuery(document).ready(function($){
+            if($('.product-slider').length){
+                $('.product-slider').slick({
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    speed: 600,
+                    arrows: true,
+                    dots: false,
+                    pauseOnHover: true,
+                    prevArrow: '<button type=\"button\" class=\"ps-arrow ps-prev\" aria-label=\"Previous\">&#10094;</button>',
+                    nextArrow: '<button type=\"button\" class=\"ps-arrow ps-next\" aria-label=\"Next\">&#10095;</button>',
+                    responsive: [
+                        { breakpoint: 1400, settings: { slidesToShow: 4 } },
+                        { breakpoint: 1100, settings: { slidesToShow: 3 } },
+                        { breakpoint: 800,  settings: { slidesToShow: 2 } },
+                        { breakpoint: 480,  settings: { slidesToShow: 1, arrows: false } }
+                    ]
+                });
+            }
+        });
+    " );
+}
+add_action( 'wp_enqueue_scripts', 'weldiore_product_slider_assets' );
